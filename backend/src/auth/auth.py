@@ -7,7 +7,7 @@ from urllib.request import urlopen
 
 AUTH0_DOMAIN = 'gadisasfaw-fsnd.us.auth0.com'
 ALGORITHMS = ['RS256']
-API_AUDIENCE = 'gadisacfapi'
+API_AUDIENCE = 'my_coffe_shop_api.com'
 
 # AuthError Exception
 '''
