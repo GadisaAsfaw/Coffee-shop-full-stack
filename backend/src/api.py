@@ -49,6 +49,8 @@ def add_new_drink(jwt):
     body = request.get_json()
     title = body['title']
     recipe = body['recipe']
+    if isinstance(recipe, dict):
+        recipe = [recipe]
     recipe = json.dumps(recipe)
     try:
         drink = Drink(title=title, recipe=recipe)
